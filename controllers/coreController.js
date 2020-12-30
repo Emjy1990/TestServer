@@ -1,3 +1,5 @@
+const testModels = require('../models/testmodels');
+
 module.exports = class coreController {
     /*
     * path : /
