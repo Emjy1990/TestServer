@@ -4,9 +4,9 @@ const port = 8000
 
 const test = require('./models/testmodels.js')
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+// Start Controller
+var mainRouter = require('./router/mainRouter');
+app.use('/', mainRouter);
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
